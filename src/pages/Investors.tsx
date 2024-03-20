@@ -9,7 +9,7 @@ const Investors = () => {
   useEffect(() => {
     const fetchInvestorData = async () => {
       try {
-        const investorsData = await fetchInvestors([2670, 2792, 332, 3611]);
+        const investorsData = await fetchInvestors();
         setInvestors(investorsData);
       } catch (error) {
         console.error("Error fetching investor data:", error);
